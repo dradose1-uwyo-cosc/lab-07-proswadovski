@@ -1,8 +1,8 @@
-# Your Name Here
+# Peyton Roswadovski
 # UWYO COSC 1010
-# Submission Date
-# Lab XX
-# Lab Section: 
+# 10/28/24
+# Lab 07
+# Lab Section: 14
 # Sources, people worked with, help given to: 
 # your
 # comments
@@ -17,7 +17,19 @@
     # If a user did not enter a number output a statement saying so
 # You will continue to prompt the user until a proper integer value is entered
 
+
+message = input("upper bound: ")
 factorial = 1
+while(True):
+    if message.isdigit() and int(message)>0:
+        for i in range(1,int(message)+1):
+            factorial *= i
+            print(factorial)
+        break
+    else: 
+        print("Value must be a positive number")
+    
+
 
 print(f"The result of the factorial based on the given bound is {factorial}")
 
@@ -39,6 +51,17 @@ print("*"*75)
 
 num_sum = 0 
 
+while(True):
+    integer = input("Integer Value: ")
+    if integer.isdigit():
+        num_sum += int(integer)
+    elif integer[0] == "-" and integer[1:].isdigit():
+        num_sum -= int(integer)
+    elif integer == "exit":
+        break
+    else:
+         print("error")
+
 print(f"Your final sum is {num_sum}")
 
 print("*"*75)
@@ -59,4 +82,12 @@ print("*"*75)
 # Print the result of the equation
 # Again, loop through prompting the user for input until `exit` in any casing is input 
 
-        
+# while(True):
+#     user_input = ("num1","num2","operation")
+#     operands = ["+","-"","/"","*","%"]
+#     for operand in operands:
+#         if (operand in user_input):
+#           numbers = user_input.split(operand)
+#           numbers[0]
+#           numbers[1]
+# #def operand_calculator(num1, number2, operation):
