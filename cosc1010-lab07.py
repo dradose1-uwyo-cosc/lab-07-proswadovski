@@ -82,12 +82,25 @@ print("*"*75)
 # Print the result of the equation
 # Again, loop through prompting the user for input until `exit` in any casing is input 
 
-# while(True):
-#     user_input = ("num1","num2","operation")
-#     operands = ["+","-"","/"","*","%"]
-#     for operand in operands:
-#         if (operand in user_input):
-#           numbers = user_input.split(operand)
-#           numbers[0]
-#           numbers[1]
-# #def operand_calculator(num1, number2, operation):
+while(True):
+    user_input = ("number1" ,"number2" , "operand")
+    operands = ["+","-"","/"","*","%"]
+    for operand in operands:
+        if (operand in user_input):
+          numbers = user_input.split(operand)
+          numbers[0]
+          numbers[1]
+
+          final_output = 0
+          match operand:
+               case "+":
+                   final_output = numbers[0] + numbers[1]
+               case "-":     
+                   final_output = numbers[0] + numbers[1]  
+               case "/":
+                   final_output = numbers[0] + numbers[1]
+               case "*":
+                   final_output = numbers[0] + numbers[1]
+               case "%":
+                   final_output = numbers[0] + numbers[1]
+                   continue
