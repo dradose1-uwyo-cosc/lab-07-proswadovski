@@ -1,9 +1,9 @@
 # Peyton Roswadovski
 # UWYO COSC 1010
-# 10/28/24
+# 10/29/24
 # Lab 07
 # Lab Section: 14
-# Sources, people worked with, help given to: 
+# Sources, people worked with, help given to: Lab TAs
 # your
 # comments
 # here
